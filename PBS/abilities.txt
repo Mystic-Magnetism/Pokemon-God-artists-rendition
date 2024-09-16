@@ -1071,6 +1071,72 @@ Description = Combines Unnerve and Chilling Neigh Abilities.
 Name = As One
 Description = Combines Unnerve and Grim Neigh Abilities.
 #-------------------------------
+[ARMORTAIL]
+Name = Armor Tail
+Description = Prevents opposing Pokémon from using priority moves.
+#-------------------------------
+[CUDCHEW]
+Name = Cud Chew
+Description = Reuses an eaten Berry at the end of the next turn.
+#-------------------------------
+[SHARPNESS]
+Name = Sharpness
+Description = Powers up slicing moves.
+#
+#\\==================================
+#\\  POKÉMON GOD ABILITIES
+#\\==================================
+#
+#-------------------------------
 [UNLEASH]
 Name = Unleash
-Description = Raises it's highest attack stat when knocking a foe.
+Description = Raises the highest offensive stat knocking any Pokémon.
+#-------------------------------
+[COLDBLOOD]
+Name = Cold Blood
+Description = Ups resistance to Fire- and Ice-type moves.
+#-------------------------------
+[DARKNESSARMOUR]
+Name = Darkness Armour
+Description = Ups resistance to Dark- and Ghost-type moves.
+#-------------------------------
+[RUSTYARMOUR]
+Name = Rusty Armour
+Description = Ups resistance to Fire- and Ground-type moves.
+#-------------------------------
+[PURIFICATION]
+Name = Purification
+Description = Restores HP if hit by a Poison-type move.
+#-------------------------------
+[PUREONE]
+Name = Pure One
+Description = Dark-type moves become Angel-type.
+#-------------------------------
+[PUREEVIL]
+Name = Pure One
+Description = Dark-type moves become Angel-type.
+#-------------------------------
+[SUNRISE]
+Name = Sunrise
+Description = Turns the sunlight harsh if it is in battle.
+#-------------------------------
+[BAREWIRE]
+Name = Bare Wire
+Description = May paralyze targets when a Pokémon makes contact.
+#-------------------------------
+[BROKENSPEAKER]
+Name = Broken Speaker
+Description = Powers up sound moves.
+#-------------------------------
+[MARTIALKING]
+Name = Martial King
+Description = Powers up moves of the same type.
+#-------------------------------
+[UNSEENTHIEF]
+Name = Unseen Thief
+Description = Item removing moves can't be blocked.
+#-------------------------------
+[PHOTOSYNTHESIS]
+Name = Photosynthesis
+Description = Heals under harsh sunlight
+

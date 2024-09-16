@@ -67,14 +67,14 @@ class VPM_PokemonPartyHud < Component
   def start_component(viewport, menu)
     super(viewport, menu)
     # Overlay stuff
-    @sprites["overlay"]   = BitmapSprite.new(Graphics.width, Graphics.height / 2, @viewport)
-    @sprites["overlay"].y = (Graphics.height / 2)
+    @sprites["overlay"]   = BitmapSprite.new(Graphics.width, Graphics.height / 2, @viewport) #2
+    @sprites["overlay"].y = (Graphics.height / 2) #2
     @info_bar_bmp = RPG::Cache.load_bitmap(MENU_FILE_PATH, "overlay_info")
     @hp_bar_bmp   = RPG::Cache.load_bitmap(MENU_FILE_PATH, "overlay_hp")
     @exp_bar_bmp  = RPG::Cache.load_bitmap(MENU_FILE_PATH, "overlay_exp")
     @status_bmp   = RPG::Cache.load_bitmap(MENU_FILE_PATH, "overlay_status")
     @item_bmp     = RPG::Cache.load_bitmap(MENU_FILE_PATH, "overlay_item")
-    @shiny_bmp    = RPG::Cache.load_bitmap(MENU_FILE_PATH, "overlay_shiny")
+    #@shiny_bmp    = RPG::Cache.load_bitmap(MENU_FILE_PATH, "overlay_shiny")
   end
 
   def should_draw?; return $player.party_count > 0; end
@@ -94,7 +94,7 @@ class VPM_PokemonPartyHud < Component
       # Pokémon Icon
       @sprites["pokemon_#{i}"] = PokemonIconSprite.new(pokemon, @viewport) if !@sprites["pokemon#{i}"] || @sprites["pokemon#{i}"].disposed?
       @sprites["pokemon_#{i}"].x = spacing + (Graphics.width / 8)
-      @sprites["pokemon_#{i}"].y = Graphics.height - 164
+      @sprites["pokemon_#{i}"].y = Graphics.height - 164 #164
       @sprites["pokemon_#{i}"].y += Graphics.height / 2 if @menu.hidden && !@menu.start_up
       @sprites["pokemon_#{i}"].z = -2
       next if pokemon.egg?
@@ -142,11 +142,13 @@ class VPM_PokemonPartyHud < Component
         statusrect = Rect.new(0, 8 * status, 8, 8)
         @sprites["overlay"].bitmap.blt(spacing + (Graphics.width/8) + 48, (Graphics.height / 2) - 106, @status_bmp, statusrect)
       end
+=begin	  
       # Shiny Icon
       if pokemon.shiny?
         @sprites["overlay"].bitmap.blt(spacing + (Graphics.width / 8) + 52, (Graphics.height / 2) - 142,
                           @shiny_bmp,Rect.new(0, 0, @shiny_bmp.width, @shiny_bmp.height))
       end
+=end	  
     end
   end
 
@@ -157,7 +159,7 @@ class VPM_PokemonPartyHud < Component
     @exp_bar_bmp.dispose
     @status_bmp.dispose
     @item_bmp .dispose
-    @shiny_bmp.dispose
+    #@shiny_bmp.dispose
   end
 end
 
